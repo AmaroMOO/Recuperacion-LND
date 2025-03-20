@@ -1,0 +1,96 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+section.busqueda {
+    width: 100%;
+    max-width: 800px; 
+    text-align: center; 
+}
+.busqueda h2 {
+    padding: 50px 0;
+    color: var(--colorTexto);
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.busqueda p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+.busqueda form {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center; 
+    gap: 5px; 
+}
+input[type="search"] {
+    padding: .5rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+input[type="submit"] {
+    border-radius: 3px;
+    background: var(--colorFondoBoton);
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+section.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    justify-content: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+article.tarjeta {
+    background-color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    overflow: hidden; 
+    text-align: center; 
+}
+article.tarjeta:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.tarjeta a {
+    color: #4169e1;
+}
+.tarjeta a:hover {
+    color: #2249bd;
+}
+.tarjeta img {
+    height: 200px;
+    width: 100%;
+    border-radius: 6px 6px 0 0; 
+    border-style: none;
+}
+.tarjeta h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 10px;
+    text-decoration: none;
+}
+
+section.navegacion {
+    padding: 20px 0;
+}
+section.navegacion a {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 50px;
+}
